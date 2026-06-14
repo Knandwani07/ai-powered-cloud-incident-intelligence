@@ -81,21 +81,27 @@ The solution leverages Amazon ECS Fargate, AWS Lambda, Amazon EventBridge, Amazo
 ai-powered-cloud-incident-intelligence/
 │
 ├── application/
+│   ├── Dockerfile
 │   ├── index.html
-│   └── Dockerfile
+│   └── README.md
+│
+├── athena/
+│   └── athena-queries.md
 │
 ├── lambda/
-│   ├── incident-log-exporter/
-│   │   └── lambda_function.py
+│   ├── incident-ai-reporter/
+│   │   ├── lambda_function.py
+│   │   └── README.md
 │   │
-│   └── incident-ai-reporter/
-│       └── lambda_function.py
+│   ├── incident-log-exporter/
+│   │   ├── lambda_function.py
+│   │   └── README.md
+│   │
+│   └── README.md
 │
 ├── scripts/
-│   └── seed-incidents.py
-|
-├── athena/
-│   └── athena-queries.sql
+│   ├── seed-incidents.py
+│   └── README.md
 │
 └── README.md
 ```
